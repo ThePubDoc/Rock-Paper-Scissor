@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="grid_layout">
+        <div class="heading">
+            <h2 id="title"> ROCK PAPER SCISSOR </h2>
+            <p class="rules">There will be a total of <strong>5 rounds</strong> between <strong>
+            you</strong> and <strong>Computer</strong></p>
+        </div>
+        <div class="middle">
+            <h3 class="other_headings" style="margin-top:20px;">PICK ONE</h3>
+            <div class="cards">
+                <div class="card" onclick="rock()" id="rock">
+                    <img src="assets/images/rock.png" alt="rock">
+                    <div class="container">
+                        <h4><b>ROCK</b></h4> 
+                    </div>
+                </div>
+                <div class="card" onclick="paper()" id="paper">
+                    <img src="assets/images/paper.png" alt="paper">
+                    <div class="container">
+                        <h4><b>PAPER</b></h4> 
+                    </div>
+                </div>
+                <div class="card" onclick="scissors()" id="scissors">
+                    <img src="assets/images/scissors.png" alt="Scissors">
+                    <div class="container">
+                        <h4><b>SCISSORS</b></h4> 
+                    </div>
+                </div>                
+            </div>
+            <div class="scores">
+                <h3 class="other_headings">SCORES</h3>
+                <table>
+                    <th>
+                        <td><strong>Round 1</strong></td>
+                        <td><strong>Round 2</strong></td>
+                        <td><strong>Round 3</strong></td>
+                        <td><strong>Round 4</strong></td>
+                        <td><strong>Round 5</strong></td>
+                    </th>
+                    <tr>
+                        <td><strong>You</strong></td>
+                        <td id="R1Y">   </td>
+                        <td id="R2Y">   </td>
+                        <td id="R3Y">   </td>
+                        <td id="R4Y">   </td>
+                        <td id="R5Y">   </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Computer</strong></td>
+                        <td id="R1C">   </td>
+                        <td id="R2C">   </td>
+                        <td id="R3C">   </td>
+                        <td id="R4C">   </td>
+                        <td id="R5C">   </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <p id="mytext"></p>
+                  <button class="refresh" onclick="refresh()">Play Again</button>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
