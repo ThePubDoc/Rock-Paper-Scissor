@@ -1,5 +1,5 @@
 # Rock-Paper-Scissor
-###The popular game Rock-Paper-Scissor made using JavaScript.<br>
+### The popular game Rock-Paper-Scissor made using JavaScript.<br>
 
 ---
 
